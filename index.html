@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scroll-up">
+      <i class="arrow-up"></i>
+    </div>
+    <!-- navigation bar  -->
+    <nav>
+      <ul id="navbar">
+        <div class="logo">
+          <li>
+            <a href="#"><img src="scotich/logo-smaller.png" alt="" /></a>
+          </li>
+        </div>
+        <div class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Menus</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </div>
+        <div class="menu">
+          <li>
+            <i
+              onclick="show()"
+              class="bx bx-menu-alt-right"
+              style="color: hsl(38, 61%, 73%)"
+            ></i>
+          </li>
+        </div>
+      </ul>
+      <ul class="sidebar">
+        <div class="logo">
+          <li onclick="hide()">
+            <i class="bx bx-x" style="font-size: 30px"></i>
+          </li>
+          <li>
+            <a href="#"><img src="scotich/logo-smaller.png" alt="" /></a>
+          </li>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Menus</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- image slider -->
+    <section id="home" class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slider swiper-slide">
+          <!-- image 1 -->
+          <img src="scotich/hero-slider-1.jpg" alt="" />
+          <div class="text">
+            <p>Feel the joy of mouthwatering food</p>
+            <h1>
+              For the love of <br />
+              delicious food
+            </h1>
+            <button>About us</button>
+          </div>
+        </div>
+        <!-- image 2 -->
+        <div class="slider swiper-slide">
+          <img src="scotich/hero-slider-2.jpg" alt="" />
+          <div class="text">
+            <p>Feel the joy of mouthwatering food</p>
+            <h1>
+              Flavors inspired by <br />
+              the Seasons
+            </h1>
+            <button>About us</button>
+          </div>
+        </div>
+        <!-- image 3 -->
+        <div class="slider swiper-slide">
+          <img src="scotich/hero-slider-3.jpg" alt="" />
+          <div class="text">
+            <p>Feel the joy of mouthwatering food</p>
+            <h1>
+              Where every flavor <br />
+              tells a story
+            </h1>
+            <button>About us</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- menus section -->
+
+    <section id="services">
+      <div class="section1-head">
+        <h1>We offer best dishes</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          <br />Aspernatur fuga doloremque fugiat maiores sequi cumque quasi.
+        </p>
+      </div>
+      <div class="meals">
+        <div class="meal">
+          <img src="scotich/service-1.jpg" alt="" />
+          <h3>Sweets</h3>
+        </div>
+        <div class="meal">
+          <a href="order.html">
+          <img src="scotich/service-2.jpg" alt="" /></a>
+          <h3>Meals</h3>
+        </div>
+        <div class="meal">
+          <img src="scotich/service-3.jpg" alt="" />
+          <h3>Drinks</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us section -->
+
+    <section id="about-us">
+      <div class="about-content">
+        <h3>Every Flavor Tells a Story</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias amet
+          laborum deserunt sit rem, repudiandae quos esse iure ratione eaque
+          quaerat maiores, fuga tempora odit voluptatem qui, illo quia nemo!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+          nihil, laborum ab harum non similique. Possimus assumenda ipsam
+          corrupti? Obcaecati totam consequuntur perspiciatis praesentium ab.
+        </p>
+        <h5 id="booking">Book Through Call</h5>
+        <h5 id="phone">0794388936</h5>
+        <button>Read More</button>
+      </div>
+      <div class="about-img">
+        <img src="scotich/scottish-cafe-restaurant.jpg" alt="" />
+      </div>
+    </section>
+  </body>
+
+  <!-- contact us section -->
+
+  <section id="contact-us">
+    <div class="contact">
+      <h1>Online Reservation</h1>
+      <form action="">
+        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Email/Phone number" required />
+        <select>
+          <option value="">1 Person</option>
+          <option value="">2 People</option>
+          <option value="">More than 2 people</option>
+        </select>
+        <input type="datetime-local" name="" id="date" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <input id="submit-btn" type="submit" value="Book a table" />
+      </form>
+    </div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="booking-request">
+        <h3>Booking Request</h3>
+        <p>0794388936</p>
+      </div>
+      <div class="contacts">
+        <h3>Our Location</h3>
+        <p>Q24G+7RQ, Chemin de, El Biar</p>
+      </div>
+      <div class="contacts">
+        <h3>Lunch Time</h3>
+        <p>11.00 am - 2.30pm</p>
+      </div>
+      <div class="contacts">
+        <h3>Dinner Time</h3>
+        <p>05.00pm - 10.00pm</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
